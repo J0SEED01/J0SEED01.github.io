@@ -1,0 +1,394 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+body{
+    background-color: #112B3C;
+    color: #F66B0E;
+    overflow: hidden auto;
+    padding-left: 100px;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.bg--img {
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 80px;
+    width: 100%;
+    opacity: 0.1;
+    animation: zoomimg 20s infinite;
+}
+
+@keyframes zoomimg{
+
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+.menu{
+    background-color: rgb(17, 43, 60);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    box-shadow: 0 0 5px 10px #205375;
+    z-index: 100;
+}
+
+.menu__list{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.img__menu{
+    filter: sepia(100%) invert(100%);
+    display: block;
+}
+
+.menu--active{
+    border-bottom: 2px solid #F66B0E;
+    padding-bottom: 10px;
+}
+
+
+.heading,
+.sub--heading{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sub--heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.paragraph{
+    font-family: 'Kurale', serif;
+}
+
+/*home*/
+.main{
+    height: 100vh;
+    position: relative;
+    z-index: 50;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.img__people{
+    max-height: 400px;
+    max-width: 100%;
+    box-shadow: 0 0 5px 0 #205375;
+    margin-bottom: 20px;
+    filter: grayscale(1);
+}
+
+.people__about{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 400px){
+
+    .main{
+        height: inherit;
+        padding: 60px 40px 20px 40px;
+    }
+
+}
+
+/*tecnology*/
+
+.title{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main__grid{
+    position: relative;
+    z-index: 10;
+    color: #112B3C;
+    display: grid;
+    grid-template-columns: repeat(3 ,minmax(100px, 600px));
+    grid-auto-rows: 300px;
+}
+
+.grid__card{
+    text-align: center;
+    position: relative;
+}
+
+
+.card__title{
+    position: relative;
+    z-index: 10;
+}
+
+.grid__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*works*/
+
+.card--works a{
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: orange;
+    font-weight: 700;
+}
+
+/*contact*/
+
+.section{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section__form{
+    padding: 0 20px 20px;
+    height: 75vh;
+    width: 80%;
+    background-color: rgba(239, 239, 239, 0.803);
+    box-shadow: 0 0 5px 3px orange;
+    overflow: hidden auto;
+}
+
+.form__contact div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contact__input{
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgb(17, 43, 60);
+    padding: 10px 90px 10px 20px;
+    border-radius: 5px;
+}
+
+.textarea{
+    display: block;
+    resize: none;
+    width: 500px;
+    height: 200px;
+    padding-top: 20px;
+    margin: 40px auto 30px auto
+}
+
+.contact__input:focus,
+.textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.contact__input:active,
+.textarea:active{
+    border: none;
+    outline: none;
+}
+
+
+.button{
+    font-family: 'Kurale', serif;
+    margin-top: 30px;
+    background-color: rgb(221, 147, 10);
+    border: 3px solid transparent;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #EFEFEF;
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__design{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.design__info{
+    display: flex;
+    align-items: center;
+}
+
+.design__info .info__img,
+.design__info .info__text{
+    display: inline;
+    padding-right: 10px;
+}
+
+.info__img{
+    width: 35px;
+    height: 35px;
+}
+
+
+@media (hover: hover){
+    .list__item:hover{
+        cursor: pointer;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        background-color:#F66B0E;
+        border-color: rgb(221, 147, 10);
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+
+    .heading{
+        font-size: 30px;
+    }
+    
+    .sub--heading{
+        font-size: 20px;
+    }
+
+    /*home*/
+    .people__about{
+        margin: none;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/*media query grid*/
+
+@media only screen and (max-width: 1000px){
+    .main__grid{
+        grid-template-columns: repeat(2 ,minmax(100px, 600px));
+        grid-auto-rows: 300px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px){
+    .main__grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 300px;
+    }
+
+}
+
+
+/*media query contact*/
+@media only screen and (max-width: 850px){
+
+    .title--contact{
+        font-size: 25px;
+    }
+
+    .form__contact div{
+        flex-direction: column;
+    }
+
+    .textarea{
+        width: 100%;
+        height: 150px;
+    }
+
+    .button{
+        width: 50%;
+        padding: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px){
+    .contact__design{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .design__info .info__img,
+    .design__info .info__text{
+        padding-right: 20px;
+        padding-bottom: 20px;  
+    }
+
+    .info__img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .title--contact{
+        font-size: 20px;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    .contact__design{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info__text{
+        font-size: 13px;
+    }
+
+}
+
