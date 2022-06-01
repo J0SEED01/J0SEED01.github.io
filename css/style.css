@@ -7,388 +7,300 @@ html {
 *::after {
     box-sizing: inherit;
 }
-  
+
+
 body{
-    background-color: #112B3C;
-    color: #F66B0E;
-    overflow: hidden auto;
-    padding-left: 100px;
-    min-height: 100vh;
-    font-size: 16px;
-}
-
-.bg--img {
-    height: 100vh;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 80px;
+    background-color: #2e2e35;
+    color: white;
+    max-width: 1500px;
     width: 100%;
-    opacity: 0.1;
-    animation: zoomimg 20s infinite;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@keyframes zoomimg{
-
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
-
+.article{
+    margin-bottom: 100px;
 }
-
-
-
-.menu{
-    background-color: rgb(17, 43, 60);
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 5px;
-    box-shadow: 0 0 5px 10px #205375;
-    z-index: 100;
-}
-
-.menu__list{
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.img__menu{
-    filter: sepia(100%) invert(100%);
-    display: block;
-}
-
-.menu--active{
-    border-bottom: 2px solid #F66B0E;
-    padding-bottom: 10px;
-}
-
 
 .heading,
 .sub--heading{
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-family: 'Roboto Slab', serif;
-}
-
-.heading{
+    font-family: 'Lora', serif;
     font-size: 40px;
-    font-weight: 700;
+    text-transform: capitalize;
+    color: gold;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .sub--heading{
+    font-family: 'Lora', serif;
     font-size: 30px;
-    font-weight: 500;
 }
-
+ 
 .paragraph{
     font-family: 'Kurale', serif;
+    color: khaki;
 }
 
-/*home*/
-.main{
-    height: 100vh;
-    position: relative;
-    z-index: 50;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-
-.img__people{
-    max-height: 400px;
-    max-width: 100%;
-    box-shadow: 0 0 5px 0 #205375;
-    margin-bottom: 20px;
-    filter: grayscale(1);
-}
-
-.people__about{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media only screen and (max-width: 400px){
-
-    .main{
-        height: inherit;
-        padding: 60px 40px 20px 40px;
-    }
-
-}
-
-/*tecnology*/
-
-.title{
-    text-align: center;
-    padding-top: 50px;
-}
-
-.main__grid{
-    position: relative;
-    z-index: 10;
-    color: #112B3C;
+.grid--portfolio{
     display: grid;
-    grid-template-columns: repeat(3 ,minmax(100px, 600px));
-    grid-auto-rows: 300px;
-}
-
-.grid__card{
-    text-align: center;
-    position: relative;
-}
-
-
-.card__title{
-    position: relative;
-    z-index: 10;
-}
-
-.grid__img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/*works*/
-
-.card--works a{
-    font-family: 'Roboto Slab', serif;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    color: orange;
-    font-weight: 700;
-}
-
-/*contact*/
-
-.section{
-    position: relative;
-    z-index: 20;
-    display: flex;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     justify-content: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
-}
-
-.section__form{
-    padding: 0 20px 20px;
-    height: 75vh;
-    width: 80%;
-    background-color: rgba(239, 239, 239, 0.803);
-    box-shadow: 0 0 5px 3px orange;
-    overflow: hidden auto;
-}
-
-.form__contact div{
-    display: flex;
-    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
 }
 
 
-.contact__input{
-    margin-top: 20px;
-    background-color: white;
-    border: 1px solid rgb(17, 43, 60);
-    padding: 10px 90px 10px 20px;
-    border-radius: 5px;
-}
-
-.textarea{
-    display: block;
-    resize: none;
-    width: 500px;
-    height: 200px;
-    padding-top: 20px;
-    margin: 40px auto 30px auto
-}
-
-.contact__input:focus,
-.textarea:focus{
-    border: none;
-    outline: none;
-}
-
-.contact__input:active,
-.textarea:active{
-    border: none;
-    outline: none;
-}
-
-
-.button{
-    font-family: 'Kurale', serif;
-    margin-top: 30px;
-    background-color: rgb(221, 147, 10);
-    border: 3px solid transparent;
-    padding: 10px 40px;
-    border-radius: 10px;
-    color: #EFEFEF;
-    font-weight: 600;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact__design{
-    position: relative;
-    z-index: 20;
-    display: flex;
+.header{
+    height: 40px;
+    background-color: rgba(34, 34, 34, 0.499);
+    position: absolute;
     width: 100%;
+    top: 0;
+    left: 0; 
+    padding: 10px;
+    display: flex;
+}
+
+.header__nav{
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.img--header{
+    width: 20px;
+    height: 20px;
+}
+
+.main{
+    width: inherit;
+    max-width: inherit;
+   
+}
+
+/*presentacion*/
+.main__presentation{
+    margin-top: 40px;
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation__data,
+.presentation__img{
+    padding: 0 40px;
+}
+
+.presentation__data{
     margin-bottom: 30px;
 }
 
-.design__info{
+.presentation__img{
+    position: relative;
+    height: 60vh;
+    width: 750px;
+}
+
+.img__developer{
+    height: 100%;
+    width: 100%;
+    filter: sepia(100%);
+    border-radius: 10px;   
+}
+
+.img__paragraph{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: goldenrod;
+    color: black;
+    font-size: 700;
+    opacity: 0.8;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*tecnologias que utilizo*/
+
+.main__technologies{
+    height: auto;
+}
+
+.technologies__grid{
+    height: inherit;
+}
+
+.grid__card{/*imagenes de 256px*/
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: gold;
+    box-shadow: 0 0 5px 5px khaki;
+}
+
+.grid__card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*mis proyectos*/
+
+
+
+.projects__grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+}
+
+.card--project{
+    box-shadow: 0 0 5px 2px goldenrod;
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+}
+
+.card--project .card__img{
+    width: 650px;
+    height: 290px;
+}
+
+.card__link{
+    display: inline-flex;
+    width: 40%;
+    justify-content: center;
+    color: gold;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .5s ease 0s, color .8s ease 0s;
+}
+
+/**/
+
+.footer{
+    background-color: rgba(34, 34, 34, 0.499);
+    padding: 50px;
+}
+
+.footer__flex{
+    padding: 50px 0;
+    text-align: center;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.design__info .info__img,
-.design__info .info__text{
-    display: inline;
-    padding-right: 10px;
-}
-
-.info__img{
-    width: 35px;
-    height: 35px;
 }
 
 
 @media (hover: hover){
-    .list__item:hover{
-        cursor: pointer;
+    .card__link:hover{
+        background-color: gold;
+        color: darkgoldenrod;
     }
-
-    .button:hover{
-        cursor: pointer;
-        background-color:#F66B0E;
-        border-color: rgb(221, 147, 10);
-    }
-
 }
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 850px){
 
     .heading{
-        font-size: 30px;
+        font-size: 35px;
+    }
+
+    .presentation__img{
+        width: 540px;
+    }
+
+    .img__developer{
+        border-radius: 50%;
+    }
+
+    .grid--portfolio{
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        
     }
     
+    .projects__grid{
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+   
+    }
+    
+}
+
+@media only screen and (max-width: 590px){
+
+    .heading,
     .sub--heading{
         font-size: 20px;
     }
 
-    /*home*/
-    .people__about{
-        margin: none;
-        width: 100%;
-        text-align: center;
+    .data--name{
+        width: 190px;
     }
 
-}
-
-
-/*media query grid*/
-
-@media only screen and (max-width: 1000px){
-    .main__grid{
-        grid-template-columns: repeat(2 ,minmax(100px, 600px));
-        grid-auto-rows: 300px;
+    .data--profession{
+        width: 220px;    
     }
+
+    .data--name,
+    .data--profession{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .technologies__title{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__presentation{
+        height: 50vh;
+    }
+
+    .presentation__img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .grid--portfolio{
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        
+    }
+
+    .card__link{
+        font-size: 10px;
+    }
+
+   .footer__flex{
+       flex-direction: column;
+   }
+
+   .flex__contact{
+       margin-bottom: 50px;
+   }
+
+   .flex__contact:last-child{
+       margin-bottom: 0;
+   }
     
-}
-
-@media only screen and (max-width: 700px){
-    .main__grid{
-        grid-template-columns: repeat(1,1fr);
-        grid-auto-rows: 300px;
-    }
+    
 
 }
-
-
-/*media query contact*/
-@media only screen and (max-width: 850px){
-
-    .title--contact{
-        font-size: 25px;
-    }
-
-    .form__contact div{
-        flex-direction: column;
-    }
-
-    .textarea{
-        width: 100%;
-        height: 150px;
-    }
-
-    .button{
-        width: 50%;
-        padding: 10px;
-    }
-
-
-}
-
-@media only screen and (max-width: 700px){
-    .contact__design{
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .design__info .info__img,
-    .design__info .info__text{
-        padding-right: 20px;
-        padding-bottom: 20px;  
-    }
-
-    .info__img{
-        width: 50px;
-        height: 50px;
-    }
-
-}
-
-@media only screen and (max-width: 500px){
-
-    .title--contact{
-        font-size: 20px;
-    }
-
-    .button{
-        width: 100%;
-    }
-
-    .contact__design{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .info__text{
-        font-size: 13px;
-    }
-
-}
-

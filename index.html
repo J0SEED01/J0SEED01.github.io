@@ -4,42 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - JDMF</title>
+    <title>Portafolio - JDMF</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <img src="images/js.jpg" alt="codigo" class="bg--img">
+    <header class="header">
+        <p class="header__paragraph paragraph">CONTACTOS</p>
+        <nav class="header__nav">
+            <div class="nav__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="https://github.com/J0SEED01"><img src="images/github.png" alt="github" class="link__img img--header"></a>
+            </div>
 
-    <nav class="menu">
-        <ul class="menu__list">
-            <li class="list__item menu--active"><a href="#" class="item__img"><img class="img__menu" src="images/home.png" alt="home"></a></li>
-            <li class="list__item"><a href="html/tecnology.html" class="item__img"><img class="img__menu" src="images/tecnology.png" alt="tecnology"></a></li>
-            <li class="list__item"><a href="html/works.html" class="item__img"><img class="img__menu" src="images/works.png" alt="works"></a></li>
-            <li class="list__item"><a href="html/contact.html" class="item__img"><img class="img__menu" src="images/contact.png" alt="contact"></a></li>
-        </ul>
-    </nav>
+            <div class="nav__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="mailto:josedaniel23011@gmail.com"><img src="images/gmail.png" alt="gmail" class="link__img img--header"></a>
+            </div>
+
+            <div class="nav__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="https://api.whatsapp.com/send?phone=+56958088268&text=Si-tienes-dudas-dejame-un-mensaje!"><img src="images/whatsapp.png" alt="whatsapp" class="link__img img--header"></a>
+            </div>
+
+            <div class="nav__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="assets/CV-2.0.pdf"><img src="images/curriculum-vitae.png" alt="curriculum-vitae" class="link__img img--header"></a>
+            </div>
+        </nav>
+    </header>
 
     <main class="main">
-        
-        
-        <article class="main__presentation">
-            <div class="presentation__img">
-                <img src="images/jose.jpg" alt="jose" class="img__people">
+
+        <article class="main__presentation article">
+
+            <div class="presentation__data">
+                <h1 class="heading data--name">jos&eacute; daniel mu&ntilde;oz flores</h1>
+                <h2 class="sub--heading data--profession">desarrollador web front - end</h2>
             </div>
-            <div class="presentation__people">      
-                <h1 class="people__name heading">josé daniel muñoz flores</h1>
-                <h2 class="people__profession sub--heading">desarrollador web front - end</h2>
-                <p class="people__about paragraph">Soy José Muñoz egresado de la UTFSM el año 2021 interesado en el desarrollo web especialmente de la parte front-end con muchas ganas de seguir aprendiendo y desarrollando mis habilidades tanto intelectuales como las sociales y de desarrollo personal</p>
+
+            <div class="presentation__img">
+                <img src="images/jose.jpg" alt="jose" class="img__developer">
+                <p class="paragraph img__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut error quod nesciunt minus voluptas rerum rem distinctio natus sequi, quasi corporis ipsa culpa velit debitis quisquam accusantium impedit assumenda enim est consequuntur illum tempora perferendis tenetur odit? Nostrum ut exercitationem, fuga sequi amet, labore repellat dignissimos consectetur praesentium totam deleniti!</p>
+            </div>
+
+        </article>
+
+        <article class="main__technologies article">
+            <h2 class="technologies__title sub--heading">tecnolog&iacute;as de conocimiento</h2>
+
+            <div class="technologies__grid grid--portfolio">
+                <figure class="grid__card grid-technology">
+                    <img src="images/html-5.png" alt="html-5" class="card__img">
+                </figure>
+    
+                <figure class="grid__card grid-technology">
+                    <img src="images/css-3.png" alt="css-3" class="card__img">
+                </figure>
+    
+                <figure class="grid__card grid-technology">
+                    <img src="images/js.png" alt="js" class="card__img">
+                </figure>
+    
+                <figure class="grid__card grid-technology">
+                    <img src="images/git.png" alt="git" class="card__img">
+                </figure>
+            </div>  
+
+        </article>
+
+        <article class="main__projects article">
+            <h2 class="projects__title sub--heading">proyectos realizados</h2>
+
+            <div class="projects__grid grid--portfolio">
+                <figure class="grid__card card--project">
+                    <img src="images/blog-cafe.png" alt="blog-cafe" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/BlogCafe">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://blog-cafe-jose-munoz.netlify.app/">ver sitio</a>
+                </figure>
+
+                <figure class="grid__card card--project">
+                    <img src="images/pag-fylo.png" alt="pag-fylo" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/FYLO-LANDING-PAGE">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://fylo-landing-two-jd23011.netlify.app/">ver sitio</a>
+                </figure>
+
+                <figure class="grid__card card--project">
+                    <img src="images/pag-huddle.png" alt="pag-huddle" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/huddle-lading">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://huddle-landing-jd23011.netlify.app/">ver sitio</a>
+                </figure>
+
+                <figure class="grid__card card--project">
+                    <img src="images/pag-faq-accordion.png" alt="pag-faq-accordion" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/FAQ-ACCORDION-CARD">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://faq-accordion-jd23011.netlify.app/">ver sitio</a>
+                </figure>
+
+                <figure class="grid__card card--project">
+                    <img src="images/pag-basse-apparel.png" alt="pag-basse-apparel" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/BASE-APPAREL">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://base-apparel-jd23011.netlify.app/">ver sitio</a>
+                </figure>
+
+                <figure class="grid__card card--project">
+                    <img src="images/pag-sign-up-form.png" alt="pag-basse-apparel" class="card__img">
+                    <a rel="noopener" target="_blank" class="card__link" href="https://github.com/J0SEED01/SIGN-UP---FORM">ver c&oacute;digo</a>
+                    <a rel="noopener" target="_blank" class="card__link" href="https://into-component-sign-up-form.netlify.app/">ver sitio</a>
+                </figure>
+    
             </div>
         </article>
     </main>
 
+    <footer class="footer">
+        <h2 class="sub--heading">cont&aacute;ctame.. !</h2>
 
+        <div class="footer__flex">
+
+            <div class="flex__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="https://github.com/J0SEED01"><img src="images/github.png" alt="github" class="link__img"></a>
+                <p class="contact__paragraph paragraph">GitHub</p>
+            </div>
+
+            <div class="flex__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="mailto:josedaniel23011@gmail.com"><img src="images/gmail.png " alt="gmail" class="link__img"></a>
+                <p class="contact__paragraph paragraph">GMAIL</p>
+            </div>
+
+            <div class="flex__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="https://api.whatsapp.com/send?phone=+56958088268&text=Si-tienes-dudas-dejame-un-mensaje!"><img src="images/whatsapp.png" alt="whatsapp" class="link__img"></a>
+                <p class="contact__paragraph paragraph">WhatsApp</p>
+            </div>
+
+            <div class="flex__contact">
+                <a rel="noopener" target="_blank" class="contact__link" href="assets/CV-2.0.pdf"><img src="images/curriculum-vitae.png" alt="curriculum-vitae" class="link__img"></a>
+                <p class="contact__paragraph paragraph">Curriculum Vitae</p>
+            </div>
+         
+        </div>
+
+    </footer>
 
 </body>
 </html>
